@@ -1,0 +1,58 @@
+ <!DOCTYPE html>
+ <html lang="en">
+
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <title>Notification</title>
+     <link rel="stylesheet" href="style.css">
+     <script src="https://kit.fontawesome.com/0184c2e24c.js" crossorigin="anonymous"></script>
+
+ </head>
+
+ <body>
+     <div class="tic">
+         <h3>Tic Tac Toe</h3>
+         <div class="choose">
+             <p>Select which you want to be?</p>
+             <ul>
+                 <li data-btn="x">Player(X)</li>
+                 <li data-btn="o">Player(o)</li>
+             </ul>
+         </div>
+     </div>
+     <div class="parent winer">
+         <ul class="turn">
+             <li class="x">X's Turn</li>
+             <li class="o">O's Turn</li>
+             <li class="hlight"></li>
+         </ul>
+
+         <div class="box">
+             <div class="field" name="one" data-btn="o" onclick="clicked(this)"></div>
+             <div class="field" name="two" data-btn="o" onclick="clicked(this)"></div>
+             <div class="field" name="three" data-btn="o" onclick="clicked(this)"></div>
+             <div class="field" name="four" data-btn="o" onclick="clicked(this)"></div>
+             <div class="field" name="five" data-btn="o" onclick="clicked(this)"></div>
+             <div class="field" name="six" data-btn="o" onclick="clicked(this)"></div>
+             <div class="field" name="seven" data-btn="o" onclick="clicked(this)"></div>
+             <div class="field" name="eight" data-btn="o" onclick="clicked(this)"></div>
+             <div class="field" name="nine" data-btn="o" onclick="clicked(this)"></div>
+         </div>
+
+     </div>
+     <div class="win">
+         <p>
+             Player <span></span> Won the game!
+
+         </p>
+         <button class="replay">Replay</button>
+     </div>
+
+
+     <script src="text.js"> </script>
+ </body>
+
+ </html>
